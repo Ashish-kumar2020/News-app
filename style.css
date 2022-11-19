@@ -1,5 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header/Navbar */
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    /* position: absolute; */
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+.navbar .nav-links ul li{
+  margin:0 25px;
+  font-weight: 600;
+}
+
+@media screen and (max-width:900px){
+    .navbar{
+        padding: 10px;
+        width: 100%;
+    }
+    .navbar .logo{
+        font-size: 2.2em;
+        font-weight: bold;
+    }
+    .navbar .nav-links ul li{
+        /* margin:0 25px; */
+        font-size: 1.3em;
+      }
+}
+
+/* Content area */
+hr{
+    width: 95%;
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+}
+.news-box{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin-top: 20px;
+}
+.common{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    align-items: center;
+}
+
+/* Footer */
+
+
+
+.btn-prev{
+    float: left;
+}
+
+.btn-next{
+    float: right;
+}
+
+/* .btn{
+    width: 50px;
+    height: 30px;
+    margin: 35px;
+    border-radius: 35px;
+} */
+/* 
+<!-- HTML !-->
+<button class="button-90" role="button">Button 90</button> */
+
+/* CSS */
+.btn {
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 42px;
+  background-color: #4C43CD;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+margin: 35px;
+  cursor: pointer;
 }
